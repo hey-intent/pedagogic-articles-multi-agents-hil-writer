@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "article_writer": "./src/graph/workflow.py:graph"
+  },
+  "env": ".env"
+}

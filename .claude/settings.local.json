@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(mcp__context7__resolve-library-id '{\"\"libraryName\"\": \"\"langchain\"\"}')",
+      "Bash(git init:*)",
+      "Bash(uv sync:*)",
+      "Bash(uv pip install:*)",
+      "Bash(uv init:*)",
+      "Bash(git rm:*)",
+      "Bash(git reset:*)",
+      "Bash(uv add:*)",
+      "Bash(uv run langgraph --help:*)",
+      "Bash(uv run:*)"
+    ]
+  }
+}
