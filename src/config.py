@@ -25,11 +25,11 @@ class AppConfig(BaseSettings):
     # API keys
     brave_search_api_key: str | None = None
 
-    # Model configuration (OpenRouter model names with provider prefix)
-    reasoning_model: str = "anthropic/claude-sonnet-4"
-    writing_model: str = "anthropic/claude-sonnet-4"
+    # Model configuration 
+    reasoning_model: str| None = None
+    writing_model: str | None = None
 
-    # OpenRouter configuration (uses OpenRouter instead of direct Anthropic)
+    # OpenRouter configuration
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     openrouter_api_key: str | None = None
 
@@ -44,7 +44,5 @@ def get_config() -> AppConfig:
     return AppConfig()
 
 
-# Convenience exports for backwards compatibility
+# Convenience export
 config = get_config()
-REASONING_MODEL = config.reasoning_model
-WRITING_MODEL = config.writing_model

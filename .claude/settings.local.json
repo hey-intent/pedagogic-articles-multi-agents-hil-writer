@@ -8,11 +8,11 @@
       "Bash(uv sync:*)",
       "Bash(uv pip install:*)",
       "Bash(uv init:*)",
-      "Bash(git rm:*)",
       "Bash(git reset:*)",
       "Bash(uv add:*)",
       "Bash(uv run langgraph --help:*)",
-      "Bash(uv run:*)"
+      "Bash(uv run:*)",
+      "Bash(find:*)"
     ]
   }
 }

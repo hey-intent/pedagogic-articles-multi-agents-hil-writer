@@ -9,9 +9,6 @@ from src.schemas import ApproachList
 from src.tools import web_search, read_webpage
 
 
-# System prompt for the approach agent that guides its behavior.
-# The prompt establishes the agent's role as a pedagogical expert and
-# provides clear instructions on tool usage and output expectations.
 APPROACH_AGENT_SYSTEM_PROMPT = """You are a pedagogical expert who creates teaching approaches.
 Given a topic, research existing educational resources and create exactly 3 distinct
 pedagogical approaches, each with a unique metaphor or analogy.
@@ -38,7 +35,7 @@ def approach_agent_node(state: ArticleState) -> dict:
     How it works:
     1. Get the topic from state
     2. Check for rejected approaches and add to prompt if present
-    3. Create a ChatAnthropic model with tools bound via bind_tools()
+    3. Create a model with tools bound via bind_tools()
        - bind_tools() enables the LLM to request tool calls in its response
     4. Send the topic to the LLM with system prompt
     5. If the LLM requests tool calls, execute them and feed results back

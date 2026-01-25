@@ -14,7 +14,6 @@ from src.schemas import CriticEvaluation
 MAX_ITERATIONS = 3
 
 
-# System prompt establishing critic evaluation criteria (AGNT-06)
 CRITIC_SYSTEM_PROMPT = """You are a pedagogical content critic evaluating educational articles.
 Your role is to ensure articles are BOTH technically accurate AND accessible to beginners.
 

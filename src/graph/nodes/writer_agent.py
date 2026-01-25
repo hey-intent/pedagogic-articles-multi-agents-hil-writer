@@ -6,9 +6,6 @@ from src.config import config, WRITING_MODEL
 from src.graph.state import ArticleState
 
 
-# System prompt establishing 3Blue1Brown pedagogical style for the writer agent.
-# Key principles: intuition before formalism, metaphor as thread,
-# shift-in-perspective "aha!" moments, conversational but precise.
 WRITER_SYSTEM_PROMPT = """You are a pedagogical writer creating accessible, engaging articles in the style of 3Blue1Brown. Your goal is to make complex topics intuitive and enjoyable.
 
 ## Core Principles
